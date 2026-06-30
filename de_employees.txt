@@ -1,0 +1,3 @@
+Vinay,DE,50000
+Phani,DE,54000
+Priyaa,DE,90000

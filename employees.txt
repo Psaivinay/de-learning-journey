@@ -1,0 +1,4 @@
+Vinay,DE,50000
+Shreya,ML,60000
+Phani,DE,54000
+Priyaa,DE,90000

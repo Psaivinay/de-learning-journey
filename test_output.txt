@@ -1,0 +1,2 @@
+Testing context manager
+This file will auto-close
