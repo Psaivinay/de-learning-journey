@@ -1,0 +1,21 @@
+2026-07-02 11:33:09,100 - INFO - Pipeline Started
+2026-07-02 11:33:09,102 - WARNING - Missing salary for Ravi — skipping
+2026-07-02 11:33:09,104 - INFO - Valid records:4 out of 5
+2026-07-02 11:33:09,104 - INFO - Starting write operation to employees.txt
+2026-07-02 11:33:09,107 - INFO - Successfully wrote 4 records to employees.txt
+2026-07-02 11:33:09,108 - INFO - Reading file:employees.txt
+2026-07-02 11:33:09,136 - INFO - Successfully read 1 lines
+2026-07-02 11:33:09,136 - DEBUG - Filtering for department:DE
+2026-07-02 11:33:09,137 - INFO - Found 3 employees in DE depaartment
+2026-07-02 11:36:02,567 - INFO - Pipeline Started
+2026-07-02 11:36:02,568 - WARNING - Missing salary for Ravi — skipping
+2026-07-02 11:36:02,568 - INFO - Valid records:4 out of 5
+2026-07-02 11:36:02,570 - INFO - Starting write operation to employees.txt
+2026-07-02 11:36:02,571 - INFO - Successfully wrote 4 records to employees.txt
+2026-07-02 11:36:02,574 - INFO - Reading file:employees.txt
+2026-07-02 11:36:02,579 - INFO - Successfully read 1 lines
+2026-07-02 11:36:02,582 - DEBUG - Filtering for department:DE
+2026-07-02 11:36:02,582 - INFO - Found 3 employees in DE department
+2026-07-02 11:36:02,583 - INFO - Starting write operation to de_employees.txt
+2026-07-02 11:36:02,584 - INFO - Successfully wrote 3 records to de_employees.txt
+2026-07-02 11:36:02,585 - INFO - Pipeline finished successfully
