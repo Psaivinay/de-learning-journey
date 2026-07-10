@@ -36,25 +36,23 @@ class BasePipeline:
 # Inherits BasePipeline — adds raw ingestion specific behaviour
 
 class BronzePipeline(BasePipeline):
-    
-    def __init__(self, name, source, destination, file_format):
-        super().__init__(name, source, destination)  # parent init
-        self.file_format = file_format               # extra attribute
-    
-    # Method overriding — different run behaviour for Bronze
+    def __init__(self,name,source,destination,file_format):
+        super().__init__(name,source,destination)
+        self.file_format=file_format
+        
     def run(self):
-        super().run()           # call parent run first
-        logging.info(f"Bronze layer: ingesting raw {self.file_format} files")
-        self.records_processed = 10000
+        super().run()
+        logging.info(f"Bronze layer :ingesting raw{self.file_format}files")
+        self.records_processed=10000
         logging.info(f"Raw data landed to {self.destination}")
-    
+        
     def get_info(self):
         base_info = super().get_info()   # get parent info
         return f"{base_info} | Format: {self.file_format}"
-
-
+    
 # ── CHILD CLASS 2: SilverPipeline ──
 # Inherits BasePipeline — adds cleaning and SCD2 behaviour
+
 class SilverPipeline(BasePipeline):
     
     def __init__(self, name, source, destination, dq_rules):
@@ -78,7 +76,6 @@ class SilverPipeline(BasePipeline):
                 f"Failed records: {self.failed_records} | "
                 f"DQ rules: {self.dq_rules}")
 
-
 # ── CHILD CLASS 3: GoldPipeline ──
 # Inherits BasePipeline — adds aggregation behaviour
 class GoldPipeline(BasePipeline):
@@ -100,12 +97,6 @@ class GoldPipeline(BasePipeline):
         base_info = super().get_info()
         return f"{base_info} | KPIs: {self.kpis}"
 
-
-# ══ MAIN EXECUTION ══
-
-print("=" * 60)
-print("MEDALLION PIPELINE — INHERITANCE DEMO")
-print("=" * 60)
 
 # Bronze layer pipeline
 bronze = BronzePipeline(
@@ -154,9 +145,3 @@ print("\nProving inheritance:")
 print(f"Bronze IS-A BasePipeline: {isinstance(bronze, BasePipeline)}")
 print(f"Silver IS-A BasePipeline: {isinstance(silver, BasePipeline)}")
 print(f"Gold IS-A BasePipeline: {isinstance(gold, BasePipeline)}")
-    
-
-    
-    
-
-    
