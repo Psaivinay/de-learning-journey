@@ -167,7 +167,7 @@ print("TEST 4: Transform failure")
 print("=" * 60)
 try:
     pipeline.connect()
-    pipeline.transform(sample_data, should_fail=False)
+    pipeline.transform(sample_data, should_fail=True)
 except TransformError as e:
     logging.error(f"TransformError caught: {e}")
     logging.error(f"Failed step: {e.step}")
