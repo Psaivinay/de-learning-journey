@@ -1,0 +1,4 @@
+pipeline,status,records
+NYC Taxi Bronze,completed,10000
+NYC Taxi Silver,failed,0
+NYC Taxi Gold,completed,100
