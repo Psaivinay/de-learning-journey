@@ -1,0 +1,11 @@
+trip_id,pickup_city,distance_km,fare,driver_rating,status,fare_per_km,trip_category
+1,Mysore,5.2,150,4.5,completed,28.85,medium
+2,Bangalore,3.1,90,3.8,completed,29.03,short
+3,Mysore,8.4,240,4.9,cancelled,28.57,long
+4,Hyderabad,2.0,60,4.2125,completed,30.0,short
+5,Bangalore,6.5,190,4.2,completed,29.23,medium
+6,Mysore,4.1,120,3.5,cancelled,29.27,medium
+7,Hyderabad,9.2,270,4.2125,completed,29.35,long
+8,Bangalore,1.5,45,4.8,completed,30.0,short
+9,Mysore,7.3,210,4.1,cancelled,28.77,long
+10,Hyderabad,3.8,110,3.9,completed,28.95,short
