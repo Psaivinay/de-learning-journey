@@ -1,0 +1,10 @@
+,trip_id,city,driver_id,distance,fare,rating,status,trip_date,fare_per_km,trip_category
+0,1,Mysore,101,5.2,150,4.5,completed,2026-01-01,28.85,medium
+1,2,Bangalore,102,3.1,90,3.8,completed,2026-01-01,29.03,short
+3,4,Hyderabad,103,2.0,60,4.3,completed,2026-01-01,30.0,short
+4,5,Bangalore,102,6.5,190,4.2,completed,2026-01-02,29.23,medium
+6,7,Hyderabad,103,9.2,270,4.3,completed,2026-01-02,29.35,long
+7,8,Bangalore,102,1.5,45,4.8,completed,2026-01-02,30.0,short
+9,10,Hyderabad,103,3.8,110,3.9,completed,2026-01-03,28.95,short
+10,11,Bangalore,104,5.5,165,4.6,completed,2026-01-03,30.0,medium
+11,12,Mysore,104,6.2,185,4.3,completed,2026-01-03,29.84,medium
